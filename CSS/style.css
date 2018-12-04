@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+body
+{
+    background-color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+header h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 0.125em 0.125em 0.313em blue;
+}
+nav{
+    list-style-type: none;
+    margin: 0em;
+    padding: 0em;
+    overflow: hidden;
+    background-color:white;
+    border-color: orange;
+    border: 0.075em solid lavender;
+    
+}
+nav a {
+    float: left;
+    width: 10em;
+    padding: 1em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    border:0.075em solid white;
+}
+
+nav a:link{
+    background-color: lavender;
+    text-shadow: 0em 0em 1em lightblue;
+}
+nav a:hover{
+    border-color: lightblue;
+    background-color: aliceblue;
+}
+nav a:active{
+    background-color: gray;
+    color: white;
+    text-shadow: 0em 0em 1em white;
+}
+/*lo siguiente coloca el último a element de la navegación a la derecha, a:last-child es un pseudo elemento*/
+nav a:last-child{
+    float: right;
+} 
