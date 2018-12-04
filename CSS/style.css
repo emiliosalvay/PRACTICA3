@@ -14,15 +14,15 @@ header h1 {
 }
 nav{
     list-style-type: none;
-    margin: 0em;
+    margin: 1em;
     padding: 0em;
     overflow: hidden;
     background-color:white;
     border-color: orange;
     border: 0.075em solid lavender;
-    
+        
 }
-nav a {
+nav a, div.contacto a {
     float: left;
     width: 10em;
     padding: 1em;
@@ -32,20 +32,55 @@ nav a {
     border:0.075em solid white;
 }
 
-nav a:link{
+nav a:link, div.contacto a:link{
     background-color: lavender;
     text-shadow: 0em 0em 1em lightblue;
 }
-nav a:hover{
+nav a:hover, div.contacto a:hover{
     border-color: lightblue;
     background-color: aliceblue;
 }
-nav a:active{
+nav a:active, div.contacto a:active{
     background-color: gray;
     color: white;
     text-shadow: 0em 0em 1em white;
 }
-/*lo siguiente coloca el último a element de la navegación a la derecha, a:last-child es un pseudo elemento*/
+/* lo siguiente coloca el último a element de la navegación a la derecha, a:last-child es un pseudo elemento
 nav a:last-child{
     float: right;
-} 
+}  */
+div.contacto{
+    position: fixed;
+    right: 1em;
+    bottom: 1em;
+}
+.fas, .fa-envelope{
+    font-size:1em;color:BLUE
+}
+div#pagecontent{
+    background-color: lightgrey;
+    position: relative;
+    left: 1em;
+    width: 50vw;
+    padding: 2em;
+    margin: 0.075em;
+    border-radius: 0em 3em 0em 0em;
+    border: 0.125em solid dimgray;
+}
+ 
+div#pagecontent article h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+    text-transform: capitalize;
+    text-shadow: 0em 0em 2em black;
+}
+div#pagecontent article h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+    text-transform: capitalize;
+    font-size: 0.75em; 
+}
+div#pagecontent article p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+    text-transform: capitalize;
+    font-size: 0.65em; 
+    text-align: justify;
+}
