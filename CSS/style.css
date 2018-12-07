@@ -57,30 +57,38 @@ div.contacto{
 .fas, .fa-envelope{
     font-size:1em;color:BLUE
 }
-div#pagecontent{
+article#rightArticle, article#leftArticle{
+    display: inline-block;
     background-color: lightgrey;
     position: relative;
-    left: 1em;
-    width: 50vw;
+    width: 45vw;
     padding: 2em;
-    margin: 0.075em;
-    border-radius: 0em 3em 0em 0em;
     border: 0.125em solid dimgray;
 }
- 
-div#pagecontent article h1{
+article#rightArticle{    
+    border-radius: 0em 3em 0em 0em;
+}
+
+article#leftArticle{    
+    border-radius:  0em 0em 0em 3em;
+}
+
+article#rightArticle h1, article#leftArticle h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;    
     text-transform: capitalize;
     text-shadow: 0em 0em 2em black;
 }
-div#pagecontent article h2{
+article#rightArticle h2, article#leftArticle h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;    
     text-transform: capitalize;
     font-size: 0.75em; 
 }
-div#pagecontent article p{
+article#rightArticle p, article#leftArticle p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;    
     text-transform: capitalize;
     font-size: 0.65em; 
     text-align: justify;
 }
+/* div#twoArticles{
+    
+} */
